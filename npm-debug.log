@@ -1,0 +1,434 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'yo',
+1 verbose cli   'generator-c-c-plus-plus-project',
+1 verbose cli   '--verbose' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'yo', null ]
+7 verbose cache add spec yo
+8 silly cache add args [ 'generator-c-c-plus-plus-project', null ]
+9 verbose cache add spec generator-c-c-plus-plus-project
+10 silly cache add parsed spec Result {
+10 silly cache add   raw: 'yo',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'yo',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: '*',
+10 silly cache add   type: 'range' }
+11 silly addNamed yo@*
+12 verbose addNamed "*" is a valid semver range for yo
+13 silly addNameRange { name: 'yo', range: '*', hasData: false }
+14 silly mapToRegistry name yo
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/yo
+18 verbose addNameRange registry:https://registry.npmjs.org/yo not in flight; fetching
+19 silly cache add parsed spec Result {
+19 silly cache add   raw: 'generator-c-c-plus-plus-project',
+19 silly cache add   scope: null,
+19 silly cache add   name: 'generator-c-c-plus-plus-project',
+19 silly cache add   rawSpec: '',
+19 silly cache add   spec: '*',
+19 silly cache add   type: 'range' }
+20 silly addNamed generator-c-c-plus-plus-project@*
+21 verbose addNamed "*" is a valid semver range for generator-c-c-plus-plus-project
+22 silly addNameRange { name: 'generator-c-c-plus-plus-project',
+22 silly addNameRange   range: '*',
+22 silly addNameRange   hasData: false }
+23 silly mapToRegistry name generator-c-c-plus-plus-project
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/generator-c-c-plus-plus-project
+27 verbose addNameRange registry:https://registry.npmjs.org/generator-c-c-plus-plus-project not in flight; fetching
+28 verbose request uri https://registry.npmjs.org/generator-c-c-plus-plus-project
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 2:30:01 PM
+31 verbose request id 2d03e74851acd600
+32 http request GET https://registry.npmjs.org/generator-c-c-plus-plus-project
+33 verbose request uri https://registry.npmjs.org/yo
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 2:30:01 PM
+36 verbose etag "F1Q5WTK15SHQLRF5OGIGM3OE4"
+37 http request GET https://registry.npmjs.org/yo
+38 http 200 https://registry.npmjs.org/yo
+39 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   etag: '"AKJ65L42DAZHFJJC0RLG7VPQL"',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'content-encoding': 'gzip',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   'content-length': '11205',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Sat, 17 Sep 2016 18:30:01 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   age: '170',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-atl6250-ATL',
+39 verbose headers   'x-cache': 'HIT',
+39 verbose headers   'x-cache-hits': '1',
+39 verbose headers   'x-timer': 'S1474137001.392552,VS0,VE0',
+39 verbose headers   vary: 'Accept-Encoding' }
+40 silly get cb [ 200,
+40 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 silly get     etag: '"AKJ65L42DAZHFJJC0RLG7VPQL"',
+40 silly get     'content-type': 'application/json',
+40 silly get     'content-encoding': 'gzip',
+40 silly get     'cache-control': 'max-age=300',
+40 silly get     'content-length': '11205',
+40 silly get     'accept-ranges': 'bytes',
+40 silly get     date: 'Sat, 17 Sep 2016 18:30:01 GMT',
+40 silly get     via: '1.1 varnish',
+40 silly get     age: '170',
+40 silly get     connection: 'keep-alive',
+40 silly get     'x-served-by': 'cache-atl6250-ATL',
+40 silly get     'x-cache': 'HIT',
+40 silly get     'x-cache-hits': '1',
+40 silly get     'x-timer': 'S1474137001.392552,VS0,VE0',
+40 silly get     vary: 'Accept-Encoding' } ]
+41 verbose get saving yo to /Users/kcraig/.npm/registry.npmjs.org/yo/.cache.json
+42 silly addNameRange number 2 { name: 'yo', range: '*', hasData: true }
+43 silly addNameRange versions [ 'yo',
+43 silly addNameRange   [ '1.1.0',
+43 silly addNameRange     '1.1.1',
+43 silly addNameRange     '1.1.2',
+43 silly addNameRange     '1.2.0',
+43 silly addNameRange     '1.2.1',
+43 silly addNameRange     '1.3.0',
+43 silly addNameRange     '1.3.2',
+43 silly addNameRange     '1.3.3',
+43 silly addNameRange     '1.4.1',
+43 silly addNameRange     '1.4.2',
+43 silly addNameRange     '1.4.4',
+43 silly addNameRange     '1.4.5',
+43 silly addNameRange     '1.4.6',
+43 silly addNameRange     '1.4.7',
+43 silly addNameRange     '1.4.8',
+43 silly addNameRange     '1.5.0',
+43 silly addNameRange     '1.5.1',
+43 silly addNameRange     '1.6.0',
+43 silly addNameRange     '1.7.0',
+43 silly addNameRange     '1.7.1',
+43 silly addNameRange     '1.8.1',
+43 silly addNameRange     '1.8.2',
+43 silly addNameRange     '1.8.3',
+43 silly addNameRange     '1.8.4',
+43 silly addNameRange     '1.8.5' ] ]
+44 silly addNamed yo@1.8.5
+45 verbose addNamed "1.8.5" is a plain semver version for yo
+46 silly mapToRegistry name yo
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry uri https://registry.npmjs.org/yo
+50 verbose addRemoteTarball https://registry.npmjs.org/yo/-/yo-1.8.5.tgz not in flight; adding
+51 verbose addRemoteTarball [ 'https://registry.npmjs.org/yo/-/yo-1.8.5.tgz',
+51 verbose addRemoteTarball   '776ab9ec79a7882f8d4f7a9e10214fdab050d928' ]
+52 info retry fetch attempt 1 at 2:30:01 PM
+53 info attempt registry request try #1 at 2:30:01 PM
+54 http fetch GET https://registry.npmjs.org/yo/-/yo-1.8.5.tgz
+55 http fetch 200 https://registry.npmjs.org/yo/-/yo-1.8.5.tgz
+56 silly fetchAndShaCheck shasum 776ab9ec79a7882f8d4f7a9e10214fdab050d928
+57 verbose addTmpTarball /var/folders/6q/5qp3f8510h5fq38nl0rncc7r0000gr/T/npm-49486-972055c8/registry.npmjs.org/yo/-/yo-1.8.5.tgz not in flight; adding
+58 verbose addTmpTarball already have metadata; skipping unpack for yo@1.8.5
+59 silly cache afterAdd yo@1.8.5
+60 verbose afterAdd /Users/kcraig/.npm/yo/1.8.5/package/package.json not in flight; writing
+61 verbose afterAdd /Users/kcraig/.npm/yo/1.8.5/package/package.json written
+62 http 200 https://registry.npmjs.org/generator-c-c-plus-plus-project
+63 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+63 verbose headers   etag: '"DJI4SPWXJGH4VS0VJTU38GCE6"',
+63 verbose headers   'content-type': 'application/json',
+63 verbose headers   'content-encoding': 'gzip',
+63 verbose headers   'cache-control': 'max-age=300',
+63 verbose headers   'content-length': '2480',
+63 verbose headers   'accept-ranges': 'bytes',
+63 verbose headers   date: 'Sat, 17 Sep 2016 18:30:01 GMT',
+63 verbose headers   via: '1.1 varnish',
+63 verbose headers   age: '0',
+63 verbose headers   connection: 'keep-alive',
+63 verbose headers   'x-served-by': 'cache-atl6221-ATL',
+63 verbose headers   'x-cache': 'MISS',
+63 verbose headers   'x-cache-hits': '0',
+63 verbose headers   'x-timer': 'S1474137001.392600,VS0,VE227',
+63 verbose headers   vary: 'Accept-Encoding' }
+64 silly get cb [ 200,
+64 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+64 silly get     etag: '"DJI4SPWXJGH4VS0VJTU38GCE6"',
+64 silly get     'content-type': 'application/json',
+64 silly get     'content-encoding': 'gzip',
+64 silly get     'cache-control': 'max-age=300',
+64 silly get     'content-length': '2480',
+64 silly get     'accept-ranges': 'bytes',
+64 silly get     date: 'Sat, 17 Sep 2016 18:30:01 GMT',
+64 silly get     via: '1.1 varnish',
+64 silly get     age: '0',
+64 silly get     connection: 'keep-alive',
+64 silly get     'x-served-by': 'cache-atl6221-ATL',
+64 silly get     'x-cache': 'MISS',
+64 silly get     'x-cache-hits': '0',
+64 silly get     'x-timer': 'S1474137001.392600,VS0,VE227',
+64 silly get     vary: 'Accept-Encoding' } ]
+65 verbose get saving generator-c-c-plus-plus-project to /Users/kcraig/.npm/registry.npmjs.org/generator-c-c-plus-plus-project/.cache.json
+66 silly addNameRange number 2 { name: 'generator-c-c-plus-plus-project',
+66 silly addNameRange   range: '*',
+66 silly addNameRange   hasData: true }
+67 silly addNameRange versions [ 'generator-c-c-plus-plus-project', [ '0.0.1', '0.1.0' ] ]
+68 silly addNamed generator-c-c-plus-plus-project@0.1.0
+69 verbose addNamed "0.1.0" is a plain semver version for generator-c-c-plus-plus-project
+70 silly mapToRegistry name generator-c-c-plus-plus-project
+71 silly mapToRegistry using default registry
+72 silly mapToRegistry registry https://registry.npmjs.org/
+73 silly mapToRegistry uri https://registry.npmjs.org/generator-c-c-plus-plus-project
+74 verbose addRemoteTarball https://registry.npmjs.org/generator-c-c-plus-plus-project/-/generator-c-c-plus-plus-project-0.1.0.tgz not in flight; adding
+75 verbose addRemoteTarball [ 'https://registry.npmjs.org/generator-c-c-plus-plus-project/-/generator-c-c-plus-plus-project-0.1.0.tgz',
+75 verbose addRemoteTarball   '6312e231faf3354a50a2d1d11d5efa5485dc0d9f' ]
+76 info retry fetch attempt 1 at 2:30:01 PM
+77 info attempt registry request try #1 at 2:30:01 PM
+78 http fetch GET https://registry.npmjs.org/generator-c-c-plus-plus-project/-/generator-c-c-plus-plus-project-0.1.0.tgz
+79 http fetch 200 https://registry.npmjs.org/generator-c-c-plus-plus-project/-/generator-c-c-plus-plus-project-0.1.0.tgz
+80 silly fetchAndShaCheck shasum 6312e231faf3354a50a2d1d11d5efa5485dc0d9f
+81 verbose addTmpTarball /var/folders/6q/5qp3f8510h5fq38nl0rncc7r0000gr/T/npm-49486-972055c8/registry.npmjs.org/generator-c-c-plus-plus-project/-/generator-c-c-plus-plus-project-0.1.0.tgz not in flight; adding
+82 verbose addTmpTarball already have metadata; skipping unpack for generator-c-c-plus-plus-project@0.1.0
+83 silly cache afterAdd generator-c-c-plus-plus-project@0.1.0
+84 verbose afterAdd /Users/kcraig/.npm/generator-c-c-plus-plus-project/0.1.0/package/package.json not in flight; writing
+85 verbose afterAdd /Users/kcraig/.npm/generator-c-c-plus-plus-project/0.1.0/package/package.json written
+86 silly install resolved [ { name: 'yo',
+86 silly install resolved     version: '1.8.5',
+86 silly install resolved     description: 'CLI tool for running Yeoman generators',
+86 silly install resolved     homepage: 'http://yeoman.io',
+86 silly install resolved     author: { name: 'Yeoman' },
+86 silly install resolved     files: [ 'lib' ],
+86 silly install resolved     main: 'lib',
+86 silly install resolved     keywords:
+86 silly install resolved      [ 'cli-app',
+86 silly install resolved        'cli',
+86 silly install resolved        'front-end',
+86 silly install resolved        'development',
+86 silly install resolved        'dev',
+86 silly install resolved        'build',
+86 silly install resolved        'web',
+86 silly install resolved        'tool',
+86 silly install resolved        'scaffold',
+86 silly install resolved        'stack',
+86 silly install resolved        'yeoman',
+86 silly install resolved        'generator',
+86 silly install resolved        'generate',
+86 silly install resolved        'app',
+86 silly install resolved        'boilerplate' ],
+86 silly install resolved     license: 'BSD-2-Clause',
+86 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/yeoman/yo.git' },
+86 silly install resolved     bin: { yo: 'lib/cli.js', 'yo-complete': 'lib/completion/index.js' },
+86 silly install resolved     engines: { node: '>=0.12.0' },
+86 silly install resolved     scripts:
+86 silly install resolved      { test: 'gulp',
+86 silly install resolved        postinstall: 'yodoctor',
+86 silly install resolved        postupdate: 'yodoctor',
+86 silly install resolved        prepublish: 'gulp prepublish' },
+86 silly install resolved     dependencies:
+86 silly install resolved      { async: '^1.0.0',
+86 silly install resolved        chalk: '^1.0.0',
+86 silly install resolved        'cli-list': '^0.1.1',
+86 silly install resolved        configstore: '^1.0.0',
+86 silly install resolved        'cross-spawn': '^3.0.1',
+86 silly install resolved        figures: '^1.3.5',
+86 silly install resolved        fullname: '^2.0.0',
+86 silly install resolved        got: '^5.0.0',
+86 silly install resolved        'humanize-string': '^1.0.0',
+86 silly install resolved        inquirer: '^0.11.0',
+86 silly install resolved        insight: '^0.7.0',
+86 silly install resolved        lodash: '^3.2.0',
+86 silly install resolved        meow: '^3.0.0',
+86 silly install resolved        'npm-keyword': '^4.1.0',
+86 silly install resolved        opn: '^3.0.2',
+86 silly install resolved        'package-json': '^2.1.0',
+86 silly install resolved        'parse-help': '^0.1.1',
+86 silly install resolved        'read-pkg-up': '^1.0.1',
+86 silly install resolved        repeating: '^2.0.0',
+86 silly install resolved        'root-check': '^1.0.0',
+86 silly install resolved        'sort-on': '^1.0.0',
+86 silly install resolved        'string-length': '^1.0.0',
+86 silly install resolved        tabtab: '^1.3.0',
+86 silly install resolved        titleize: '^1.0.0',
+86 silly install resolved        'update-notifier': '^0.6.0',
+86 silly install resolved        'user-home': '^2.0.0',
+86 silly install resolved        'yeoman-character': '^1.0.0',
+86 silly install resolved        'yeoman-doctor': '^2.0.0',
+86 silly install resolved        'yeoman-environment': '^1.6.1',
+86 silly install resolved        yosay: '^1.0.0' },
+86 silly install resolved     devDependencies:
+86 silly install resolved      { gulp: '^3.6.0',
+86 silly install resolved        'gulp-coveralls': '^0.1.0',
+86 silly install resolved        'gulp-eslint': '^2.0.0',
+86 silly install resolved        'gulp-exclude-gitignore': '^1.0.0',
+86 silly install resolved        'gulp-istanbul': '^0.10.4',
+86 silly install resolved        'gulp-mocha': '^2.0.0',
+86 silly install resolved        'gulp-nsp': '^2.1.0',
+86 silly install resolved        'gulp-plumber': '^1.0.0',
+86 silly install resolved        mocha: '^2.1.0',
+86 silly install resolved        mockery: '^1.4.0',
+86 silly install resolved        nock: '^8.0.0',
+86 silly install resolved        nsp: '^2.2.0',
+86 silly install resolved        proxyquire: '^1.0.1',
+86 silly install resolved        'registry-url': '^3.0.0',
+86 silly install resolved        sinon: '^1.12.1' },
+86 silly install resolved     tabtab: { yo: [Object] },
+86 silly install resolved     gitHead: '3be725bd6376ead2c593741da2d374082f673b05',
+86 silly install resolved     bugs: { url: 'https://github.com/yeoman/yo/issues' },
+86 silly install resolved     _id: 'yo@1.8.5',
+86 silly install resolved     _shasum: '776ab9ec79a7882f8d4f7a9e10214fdab050d928',
+86 silly install resolved     _from: 'yo@*',
+86 silly install resolved     _npmVersion: '3.10.3',
+86 silly install resolved     _nodeVersion: '6.3.1',
+86 silly install resolved     _npmUser: { name: 'sboudrias', email: 'admin@simonboudrias.com' },
+86 silly install resolved     dist:
+86 silly install resolved      { shasum: '776ab9ec79a7882f8d4f7a9e10214fdab050d928',
+86 silly install resolved        tarball: 'https://registry.npmjs.org/yo/-/yo-1.8.5.tgz' },
+86 silly install resolved     maintainers:
+86 silly install resolved      [ [Object],
+86 silly install resolved        [Object],
+86 silly install resolved        [Object],
+86 silly install resolved        [Object],
+86 silly install resolved        [Object],
+86 silly install resolved        [Object],
+86 silly install resolved        [Object] ],
+86 silly install resolved     _npmOperationalInternal:
+86 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+86 silly install resolved        tmp: 'tmp/yo-1.8.5.tgz_1472703392595_0.8789802109822631' },
+86 silly install resolved     directories: {},
+86 silly install resolved     _resolved: 'https://registry.npmjs.org/yo/-/yo-1.8.5.tgz' },
+86 silly install resolved   { name: 'generator-c-c-plus-plus-project',
+86 silly install resolved     version: '0.1.0',
+86 silly install resolved     description: 'Yeoman generator for a C/C++ project: comes with Automake & Autoconf for \'Automake C++ Tutorial\'. Supports C too.',
+86 silly install resolved     files: [ 'app' ],
+86 silly install resolved     keywords:
+86 silly install resolved      [ 'yeoman-generator',
+86 silly install resolved        'c/c++',
+86 silly install resolved        'c',
+86 silly install resolved        'c++',
+86 silly install resolved        'automake',
+86 silly install resolved        'autoconf',
+86 silly install resolved        'c plus',
+86 silly install resolved        'plus',
+86 silly install resolved        'c plus plus' ],
+86 silly install resolved     dependencies:
+86 silly install resolved      { chalk: '*',
+86 silly install resolved        'underscore.string': '*',
+86 silly install resolved        'yeoman-generator': '^0.20.2' },
+86 silly install resolved     license: 'Apache-2.0',
+86 silly install resolved     author: { name: 'Baris Yuksel', url: 'http://barisyuksel.com' },
+86 silly install resolved     contributors: [ [Object] ],
+86 silly install resolved     repository:
+86 silly install resolved      { type: 'git',
+86 silly install resolved        url: 'git+https://github.com/byuksel/generator-c-c-plus-plus-project.git' },
+86 silly install resolved     bugs: { url: 'https://github.com/byuksel/generator-c-c-plus-plus-project/issues' },
+86 silly install resolved     main: 'app/index.js',
+86 silly install resolved     gitHead: 'bfca694db88ad43febe0bfb9f3c3ce8f78732735',
+86 silly install resolved     homepage: 'https://github.com/byuksel/generator-c-c-plus-plus-project#readme',
+86 silly install resolved     _id: 'generator-c-c-plus-plus-project@0.1.0',
+86 silly install resolved     scripts: {},
+86 silly install resolved     _shasum: '6312e231faf3354a50a2d1d11d5efa5485dc0d9f',
+86 silly install resolved     _from: 'generator-c-c-plus-plus-project@*',
+86 silly install resolved     _npmVersion: '3.5.2',
+86 silly install resolved     _nodeVersion: '4.2.3',
+86 silly install resolved     _npmUser: { name: 'byuksel', email: 'baris@onehundredyearsofcode.com' },
+86 silly install resolved     dist:
+86 silly install resolved      { shasum: '6312e231faf3354a50a2d1d11d5efa5485dc0d9f',
+86 silly install resolved        tarball: 'https://registry.npmjs.org/generator-c-c-plus-plus-project/-/generator-c-c-plus-plus-project-0.1.0.tgz' },
+86 silly install resolved     maintainers: [ [Object] ],
+86 silly install resolved     directories: {},
+86 silly install resolved     _resolved: 'https://registry.npmjs.org/generator-c-c-plus-plus-project/-/generator-c-c-plus-plus-project-0.1.0.tgz' } ]
+87 info install yo@1.8.5 into /usr/local/lib
+88 info install generator-c-c-plus-plus-project@0.1.0 into /usr/local/lib
+89 info installOne yo@1.8.5
+90 verbose installOne of yo to /usr/local/lib not in flight; installing
+91 info installOne generator-c-c-plus-plus-project@0.1.0
+92 verbose installOne of generator-c-c-plus-plus-project to /usr/local/lib not in flight; installing
+93 verbose lock using /Users/kcraig/.npm/_locks/yo-c80abb7e04f27e35.lock for /usr/local/lib/node_modules/yo
+94 verbose lock using /Users/kcraig/.npm/_locks/generator-c-c-plus-plus--8212e496b0f5cc42.lock for /usr/local/lib/node_modules/generator-c-c-plus-plus-project
+95 silly install write writing yo 1.8.5 to /usr/local/lib/node_modules/yo
+96 silly install write writing generator-c-c-plus-plus-project 0.1.0 to /usr/local/lib/node_modules/generator-c-c-plus-plus-project
+97 verbose unbuild lib/node_modules/generator-c-c-plus-plus-project
+98 verbose unbuild lib/node_modules/yo
+99 silly gentlyRm /usr/local/lib/node_modules/generator-c-c-plus-plus-project is being purged from base /usr/local
+100 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/generator-c-c-plus-plus-project
+101 verbose tar unpack /Users/kcraig/.npm/generator-c-c-plus-plus-project/0.1.0/package.tgz
+102 verbose tar unpacking to /usr/local/lib/node_modules/generator-c-c-plus-plus-project
+103 silly gentlyRm /usr/local/lib/node_modules/generator-c-c-plus-plus-project is being purged
+104 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/generator-c-c-plus-plus-project
+105 silly gunzTarPerm modes [ '755', '644' ]
+106 info preuninstall yo@1.6.0
+107 info uninstall yo@1.6.0
+108 verbose unbuild rmStuff yo@1.6.0 from /usr/local/lib/node_modules
+109 silly gentlyRm /usr/local/bin/yo is being gently removed
+110 silly gentlyRm verifying /usr/local is an npm working directory
+111 error tar.unpack untar error /Users/kcraig/.npm/generator-c-c-plus-plus-project/0.1.0/package.tgz
+112 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+113 silly gentlyRm deletion target /usr/local/bin/yo is under /usr/local
+114 verbose gentlyRm vacuuming from /usr/local/bin/yo up to /usr/local
+115 verbose unlock done using /Users/kcraig/.npm/_locks/generator-c-c-plus-plus--8212e496b0f5cc42.lock for /usr/local/lib/node_modules/generator-c-c-plus-plus-project
+116 silly vacuum-fs removing /usr/local/bin/yo
+117 silly vacuum-fs quitting because other entries in /usr/local/bin
+118 info postuninstall yo@1.6.0
+119 silly gentlyRm /usr/local/lib/node_modules/yo is being purged from base /usr/local
+120 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/yo
+121 silly vacuum-fs purging /usr/local/lib/node_modules/yo
+122 verbose unlock done using /Users/kcraig/.npm/_locks/yo-c80abb7e04f27e35.lock for /usr/local/lib/node_modules/yo
+123 verbose fstream_path /usr/local/lib/node_modules/generator-c-c-plus-plus-project
+124 verbose fstream_type Directory
+125 verbose fstream_class DirWriter
+126 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/generator-c-c-plus-plus-project'
+126 verbose stack     at Error (native)
+127 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+127 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+127 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+128 verbose cwd /Users/kcraig/Dropbox/PlatformIO Arduino/BGE Monitor
+129 error Darwin 14.5.0
+130 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "yo" "generator-c-c-plus-plus-project" "--verbose"
+131 error node v4.2.2
+132 error npm  v2.14.7
+133 error path /usr/local/lib/node_modules/generator-c-c-plus-plus-project
+134 error code EACCES
+135 error errno -13
+136 error syscall mkdir
+137 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/generator-c-c-plus-plus-project'
+137 error     at Error (native)
+137 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/generator-c-c-plus-plus-project']
+137 error   errno: -13,
+137 error   code: 'EACCES',
+137 error   syscall: 'mkdir',
+137 error   path: '/usr/local/lib/node_modules/generator-c-c-plus-plus-project',
+137 error   fstream_type: 'Directory',
+137 error   fstream_path: '/usr/local/lib/node_modules/generator-c-c-plus-plus-project',
+137 error   fstream_class: 'DirWriter',
+137 error   fstream_stack:
+137 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+137 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+137 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+138 error Please try running this command again as root/Administrator.
+139 verbose exit [ -13, true ]
+140 verbose unbuild lib/node_modules/generator-c-c-plus-plus-project
+141 silly gentlyRm /usr/local/lib/node_modules/generator-c-c-plus-plus-project is being purged from base /usr/local
+142 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/generator-c-c-plus-plus-project
+143 verbose unbuild lib/node_modules/yo
+144 info preuninstall yo@1.6.0
+145 info uninstall yo@1.6.0
+146 verbose unbuild rmStuff yo@1.6.0 from /usr/local/lib/node_modules
+147 silly gentlyRm /usr/local/bin/yo is being gently removed
+148 silly gentlyRm verifying /usr/local is an npm working directory
+149 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+150 silly gentlyRm deletion target /usr/local/bin/yo is under /usr/local
+151 verbose gentlyRm vacuuming from /usr/local/bin/yo up to /usr/local
+152 info postuninstall yo@1.6.0
+153 silly gentlyRm /usr/local/lib/node_modules/yo is being purged from base /usr/local
+154 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/yo
+155 silly vacuum-fs purging /usr/local/lib/node_modules/yo
+156 error error rolling back Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/yo'
+156 error error rolling back     at Error (native)
+156 error error rolling back  { [Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/yo']
+156 error error rolling back   errno: -13,
+156 error error rolling back   code: 'EACCES',
+156 error error rolling back   syscall: 'rmdir',
+156 error error rolling back   path: '/usr/local/lib/node_modules/yo' }

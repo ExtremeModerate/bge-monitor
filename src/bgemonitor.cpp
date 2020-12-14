@@ -60,15 +60,15 @@ void sendTextMessage(const char *phoneNumber, double message);
 void sendTextMessage(const char *phoneNumber, float message);
 
 // ThingSpeak Channel number and API key
-#define TSCHANNEL 150647
+#define TSCHANNEL 1257165
 // const char * myWriteAPIKey    = "A7CCN9ZP8KOR8MZ7";
-#define TSAPIKEY  "A7CCN9ZP8KOR8MZ7"
+#define TSAPIKEY  "XR8XPHTH5MX4AGQN"
 WiFiClient client;
 // TSINTERVAL = number of seconds between ThingSpeak updates
 #define TSINTERVAL 15
 unsigned long nextTSUpdate = 0;
 // TEXTINTERVAL = number of MINUTES between text updates
-#define TEXTINTERVAL 15
+#define TEXTINTERVAL 150
 unsigned long nextTextUpdate = 0;
 
 
@@ -87,9 +87,9 @@ double Kelvin(double celsius)
 void tick()
 {
     // toggle state
-    int state = digitalRead(BUILTIN_LED); // get the current state of GPIO1 pin
+    int state = digitalRead(LED_BUILTIN); // get the current state of GPIO1 pin
 
-    digitalWrite(BUILTIN_LED, !state); // set pin to the opposite state
+    digitalWrite(LED_BUILTIN, !state); // set pin to the opposite state
 }
 
 // gets called when WiFiManager enters configuration mode
@@ -152,7 +152,7 @@ void setup()
     Serial.begin(9600);
 
     // set led pin as output
-    pinMode(BUILTIN_LED, OUTPUT);
+    pinMode(LED_BUILTIN, OUTPUT);
     // start ticker with 0.5 because we start in AP mode and try to connect
     ticker.attach(0.6, tick);
 
@@ -186,11 +186,11 @@ void setup()
     ticker.attach(5, tick);
 
     // keep LED on
-    digitalWrite(BUILTIN_LED, LOW);
+    digitalWrite(LED_BUILTIN, LOW);
     sendTextMessage(textNumber, "hello");
 
     // initialize the variables we're linked to
-    domeTarget = 250;
+    domeTarget = 450;
 
     // tell the PID to range between 0 and the full window size
     domePID.SetOutputLimits(0, FANWINDOW);
@@ -251,8 +251,8 @@ void loop()
       }
     }
 
-    if (millis() >= nextTextUpdate) {
-        nextTextUpdate = millis() + TEXTINTERVAL * 60 * 1000; // next time we need to send a text update
-        sendTextMessage(textNumber, domeTempF);
-    }
+    // if (millis() >= nextTextUpdate) {
+    //     nextTextUpdate = millis() + TEXTINTERVAL * 60 * 1000; // next time we need to send a text update
+    //     sendTextMessage(textNumber, domeTempF);
+    // }
 } // loop
